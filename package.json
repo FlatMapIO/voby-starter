@@ -1,0 +1,29 @@
+{
+  "name": "voby-start",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "up": "pnpm up -Lri",
+    "panda.studio": "pnpm panda studio",
+    "postinstall": "tsx scripts/postinstall.ts"
+  },
+  "dependencies": {
+    "@zag-js/anatomy": "^0.12.0",
+    "voby": "^0.54.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@pandacss/dev": "^0.7.0",
+    "@types/node": "^20.4.2",
+    "postcss": "^8.4.26",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.4",
+    "voby-vite": "^1.2.3"
+  }
+}
