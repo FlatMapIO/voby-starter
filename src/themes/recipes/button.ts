@@ -1,7 +1,8 @@
 import { defineParts, defineRecipe } from '@pandacss/dev'
-import {createAnatomy} from '@zag-js/anatomy'
 
-const parts = defineParts(createAnatomy('button').parts('root', 'icon', 'spinner').build())
+import { buttonAnatomy } from '../anatomy'
+
+const parts = defineParts(buttonAnatomy)
 
 export const button = defineRecipe({
   name: 'button',

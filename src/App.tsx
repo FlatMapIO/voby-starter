@@ -4,6 +4,7 @@ import { css } from '@styled-system/css'
 import { flex } from '@styled-system/patterns'
 import { button } from '@styled-system/recipes'
 
+import { Button } from './components/button'
 import { TailwindIndicator } from './components/responsive-indicator'
 import { ThemeToggle } from './components/theme-toggle'
 
@@ -28,14 +29,12 @@ export const App = () => {
             gap: '10',
           })}
         >
-          <button
-            data-scope='button'
-            data-part='root'
+          <Button
             class={[button({ variant: 'primary' })]}
             onClick={() => count((count) => count + 1)}
           >
             count is {count}
-          </button>
+          </Button>
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>
