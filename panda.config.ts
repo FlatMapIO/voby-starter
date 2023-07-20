@@ -14,7 +14,7 @@ export default defineConfig({
   exclude: [],
 
   // The output directory for your css system
-  outdir: 'src/styled-system',
+  outdir: 'styled-system',
 
   globalCss,
 

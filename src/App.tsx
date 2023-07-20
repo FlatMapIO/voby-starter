@@ -1,23 +1,37 @@
 import { $ } from 'voby'
 
-import { TailwindIndicator } from './components/tailwind-indicator'
+import { css } from '@styled-system/css'
+import { flex } from '@styled-system/patterns'
+import { button } from '@styled-system/recipes'
+
+import { TailwindIndicator } from './components/responsive-indicator'
 import { ThemeToggle } from './components/theme-toggle'
-import { button } from './styled-system/recipes'
 
 export const App = () => {
   const count = $(0)
+
   return (
-    <>
+    <div
+      class={flex({
+        direction: 'column',
+        gap: '4',
+        p: '8',
+      })}
+    >
       <div>
         <ThemeToggle />
       </div>
       <main>
         <h1>Vite + Voby</h1>
-        <div class='card'>
+        <div
+          class={css({
+            gap: '10',
+          })}
+        >
           <button
             data-scope='button'
             data-part='root'
-            class={button({ variant: 'primary' })}
+            class={[button({ variant: 'primary' })]}
             onClick={() => count((count) => count + 1)}
           >
             count is {count}
@@ -29,6 +43,6 @@ export const App = () => {
       </main>
 
       <TailwindIndicator />
-    </>
+    </div>
   )
 }

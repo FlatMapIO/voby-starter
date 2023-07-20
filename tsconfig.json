@@ -22,14 +22,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*",
-      ]
+      ],
+      "@styled-system/*": [
+        "./styled-system/*"
+      ],
     }
   },
   "include": [
-    "src"
+    "src",
   ],
   "references": [
     {
