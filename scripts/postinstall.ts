@@ -1,15 +1,15 @@
-import { existsSync, rmSync } from "node:fs";
+import { existsSync, rmSync } from 'node:fs'
 
 function removeVobyTsConfig() {
   const files = [
-    "node_module/voby/tsconfig.json",
-    "node_module/oby/tsconfig.json",
-  ];
+    'node_module/voby/tsconfig.json',
+    'node_module/oby/tsconfig.json',
+  ]
   files.forEach((file) => {
     if (existsSync(file)) {
-      rmSync(file);
+      rmSync(file)
     }
-  });
+  })
 }
 
-removeVobyTsConfig();
+removeVobyTsConfig()

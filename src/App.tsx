@@ -5,7 +5,7 @@ import { flex } from '@styled-system/patterns'
 import { button } from '@styled-system/recipes'
 
 import { Button } from './components/button'
-import { TailwindIndicator } from './components/responsive-indicator'
+import { ResponsiveIndicator } from './components/responsive-indicator'
 import { ThemeToggle } from './components/theme-toggle'
 
 export const App = () => {
@@ -41,7 +41,7 @@ export const App = () => {
         </div>
       </main>
 
-      <TailwindIndicator />
+      <ResponsiveIndicator />
     </div>
   )
 }

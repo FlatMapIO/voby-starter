@@ -1,6 +1,6 @@
 import { css } from '@styled-system/css'
 
-export const TailwindIndicator = () => {
+export const ResponsiveIndicator = () => {
   if (import.meta.env.PROD) return null
 
   return (
